@@ -14,15 +14,15 @@
 
 enum _compfunc_status {
 	COMPFUNC_SUCCESS = 0,
-	COMPFUNC_SOFT_FAIL,
-	COMPFUNC_HARD_FAIL,
+	COMPFUNC_SOFT_FAULT,
+	COMPFUNC_HARD_FAULT,
 	COMPFUNC_STATUS_MAX
 };
 typedef enum _compfunc_status compfunc_status_t;
 
 static char *_symbolic_status[] = { [COMPFUNC_SUCCESS] = "value", 
-				    [COMPFUNC_SOFT_FAIL] = "soft-fail", 
-				    [COMPFUNC_HARD_FAIL] = "hard-fail",
+				    [COMPFUNC_SOFT_FAULT] = "soft-fault", 
+				    [COMPFUNC_HARD_FAULT] = "hard-fault",
 				    [COMPFUNC_STATUS_MAX] = "undefined" };
 
 static inline char *symbolic_status(compfunc_status_t status) 
