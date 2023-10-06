@@ -22,13 +22,13 @@ namespace os::lab1::compfunc {
 
     static 
     std::ostream& operator<<(std::ostream& os, const hard_fault) {
-	os << "hard fault";
+	os << "critical fault";
 	return os;
     }
 
     static
     std::ostream& operator<<(std::ostream& os, const soft_fault) {
-	os << "soft fault";
+	os << "non-critial fault";
 	return os;
     }
 
